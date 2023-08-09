@@ -20,13 +20,25 @@
     console.log(product);
 
     function goFish() {
-      window.location.href = `https://gentle-profiterole-0c4bec.netlify.app/?uid=${product}`;
+      if (product != null) {
+        window.location.href = `https://gentle-profiterole-0c4bec.netlify.app/?uid=${product}`;
+      } else {
+        window.location.href = `https://gentle-profiterole-0c4bec.netlify.app/`;
+      }
     }
     function goScratch() {
-      window.location.href = `https://friendly-crisp-89dfaf.netlify.app/?uid=${product}`;
+      if (product != null) {
+        window.location.href = `https://friendly-crisp-89dfaf.netlify.app/?uid=${product}`;
+      } else {
+        window.location.href = `https://friendly-crisp-89dfaf.netlify.app/`;
+      }
     }
     function goSpin() {
-      window.location.href = `https://mobile--sprightly-youtiao-662b0f.netlify.app/?uid=${product}`;
+      if (product != null) {
+        window.location.href = `https://mobile--sprightly-youtiao-662b0f.netlify.app/?uid=${product}`;
+      } else {
+        window.location.href = `https://mobile--sprightly-youtiao-662b0f.netlify.app/`;
+      }
     }
     // }
   </script>
@@ -262,7 +274,7 @@
 
 
         <div class="card mb-3">
-          <a href="#" class="" onclick="goSPin()">
+          <a href="#" class="" onclick="goSpin()">
             <img src="./public/src/assets/img/fortunewheel.png" class="card-img lazy mx-auto" alt="..."
               style="width: 50%;">
           </a>

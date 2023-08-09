@@ -23,6 +23,6 @@ export const db = getFirestore(firebaseApp);
 export const leaderboard = collection(db, col);
 
 const firebaseApp2 = initializeApp(firebaseConfig);
-const col2 = "fishshoot-m88-leaderboard";
+const col2 = "akumaujuara-fishshoot-leaderboard";
 export const db2 = getFirestore(firebaseApp2);
 export const fish = collection(db2, col2);
