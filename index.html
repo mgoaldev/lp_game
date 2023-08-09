@@ -18,6 +18,16 @@
     const urlParams = new URLSearchParams(queryString);
     const product = urlParams.get('uid');
     console.log(product);
+
+    function goFish() {
+      window.location.href = `https://gentle-profiterole-0c4bec.netlify.app/?uid=${product}`;
+    }
+    function goScratch() {
+      window.location.href = `https://friendly-crisp-89dfaf.netlify.app/?uid=${product}`;
+    }
+    function goSpin() {
+      window.location.href = `https://mobile--sprightly-youtiao-662b0f.netlify.app/?uid=${product}`;
+    }
     // }
   </script>
 </head>
@@ -32,7 +42,7 @@
               <div class="nav flex-column nav-tabs" id="nav-tab" role="tablist">
                 <div class="d-flex justify-content-end">
                   <div class="d-flex row">
-                    <a href="https://gentle-profiterole-0c4bec.netlify.app/" class="">
+                    <a href="#" class="" onclick="goFish()">
                       <img src="./public/src/assets/img/ikan.png" class="image lazy" alt="Icon Game Fish" loading="lazy"
                         style="width: 200px;">
                     </a>
@@ -44,7 +54,7 @@
                 </div>
                 <div class="d-flex justify-content-start">
                   <div class="d-flex row">
-                    <a href="https://friendly-crisp-89dfaf.netlify.app/" class="">
+                    <a href="#" class="" onclick="goScratch()">
                       <img src="./public/src/assets/img/scratch.png" class="image1 lazy" alt="Icon Game Scratch"
                         loading="lazy" style="width: 200px;">
                     </a>
@@ -60,7 +70,7 @@
                   </div> -->
                 <div class="d-flex justify-content-start">
                   <div class="d-flex row">
-                    <a href="https://mobile--sprightly-youtiao-662b0f.netlify.app/" class="">
+                    <a href="#" class="" onclick="goSpin()">
                       <img src="./public/src/assets/img/fortunewheel.png" class="image lazy "
                         alt="Icon Game Fortune Wheel" loading="lazy" style="width: 200px;">
                     </a>
@@ -174,7 +184,7 @@
     <div class="container">
       <div class="align-items-center game mx-auto">
         <div class="card mb-3">
-          <a href="https://gentle-profiterole-0c4bec.netlify.app/" class="">
+          <a href="#" class="" onclick="goFish()">
             <img src="./public/src/assets/img/ikan.png" class="card-img lazy mx-auto" alt="..." style="width: 50%;">
           </a>
           <!-- Button trigger modal -->
@@ -252,7 +262,7 @@
 
 
         <div class="card mb-3">
-          <a href="https://mobile--sprightly-youtiao-662b0f.netlify.app/" class="">
+          <a href="#" class="" onclick="goSPin()">
             <img src="./public/src/assets/img/fortunewheel.png" class="card-img lazy mx-auto" alt="..."
               style="width: 50%;">
           </a>
@@ -288,7 +298,7 @@
 
 
         <div class="card mb-3">
-          <a href="https://friendly-crisp-89dfaf.netlify.app/" class="">
+          <a href="#" class="" onclick="goScratch()">
             <img src="./public/src/assets/img/scratch.png" class="card-img lazy mx-auto" alt="..." style="width: 50%;">
           </a>
           <!-- <img src="./public/src/assets/img/coming.png" class="card-img lazy mx-auto" alt="..." style="width: 50%;"> -->
