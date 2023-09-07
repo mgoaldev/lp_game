@@ -13,6 +13,15 @@
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link href="./public/src/css/index.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QEFEF7QKL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QEFEF7QKL');
+  </script>
   <script>
     // function GetURLParameter(sParam) {
     const queryString = window.location.search;
@@ -51,23 +60,23 @@
 <body>
   <div class="d-none d-sm-block">
     <div class="container-fluid">
-      
+
       <div class="row">
         <!-- left col -->
         <div class="col-md-3 mt-5">
-          <div class="d-flex justify-content-center">
+          <!-- <div class="d-flex justify-content-center">
             <div class="d-flex row">
               <a href="https://m88play.co/" class="" target="_blank" >
                 <img src="./public/src/assets/img/horizontal.png" class="image1 lazy" alt="Icon Game Scratch"
                   loading="lazy" style="width: 200px;">
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- mid col -->
         <div class="col-md-6">
           <div class="align-items-center game mx-auto">
-        
+
             <div class="row gx-5">
               <div class="col-md-6">
                 <div class="d-flex flex-column">
@@ -75,16 +84,17 @@
                     <div class="d-flex justify-content-end">
                       <div class="d-flex row">
                         <a href="#" class="" onclick="goFish()">
-                          <img src="./public/src/assets/img/ikan.png" class="image lazy" alt="Icon Game Fish" loading="lazy"
-                            style="width: 200px;">
+                          <img src="./public/src/assets/img/ikan.png" class="image lazy" alt="Icon Game Fish"
+                            loading="lazy" style="width: 200px;">
                         </a>
                         <div class="d-flex justify-content-end">
                           <button class="nav-link fish active" id="nav-home-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">
                             LeaderBoard Fish
-                        </button>
+                          </button>
                         </div>
-                       
+
                       </div>
                     </div>
                     <div class="d-flex justify-content-start">
@@ -113,7 +123,7 @@
                             type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                             LeaderBoard Pinball
                           </button> -->
-    
+
                       </div>
                     </div>
                   </div>
@@ -125,8 +135,8 @@
                     tabindex="0">
                     <div class="leaderboard">
                       <div class="d-flex column">
-                        <img src="./public/src/assets/img/fish.png" loading="lazy" class="img-fluid lazyload mt-2 mx-auto"
-                          alt="..." style="width: 65%;">
+                        <img src="./public/src/assets/img/fish.png" loading="lazy"
+                          class="img-fluid lazyload mt-2 mx-auto" alt="..." style="width: 65%;">
                       </div>
                       <table id="fishTable" class="mt-3">
                         <thead>
@@ -141,7 +151,8 @@
                       </table>
                       <div class="row">
                         <div class="d-flex justify-content-center mt-3">
-                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#termCond">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#termCond">
                             Term & Condition
                           </button>
                           <!-- Modal -->
@@ -161,30 +172,32 @@
                                       - Hadiah akan dikreditkan kedalam akun M88 berupa deposit (Apabila pemenang belum
                                       memiliki akun M88, pemenang wajib
                                       mendaftarkan diri dulu di akun M88 untuk dapat
-                                      mengklaim hadiah) - TO 1x <br />- Leaderboard akan direset setiap hari minggu menuju
+                                      mengklaim hadiah) - TO 1x <br />- Leaderboard akan direset setiap hari minggu
+                                      menuju
                                       senin pukul 00.00wib<br />-
                                       Pemenang akan diumumkan di leaderboard setiap hari senin setiap minggunya.<br />-
                                       Pemenang akan dihubungi oleh pihak
                                       M88 sesuai dengan nomor telepon yang telah didaftarkan.<br />- hadiah tidak dapat
                                       diuangkan atau ditukar dengan
-                                      apapun.<br />- Akan diambil 3 pemenang teratas didalam leaderboard.<br />- M88 berhak
+                                      apapun.<br />- Akan diambil 3 pemenang teratas didalam leaderboard.<br />- M88
+                                      berhak
                                       mendiskualifikasi atas semua
                                       kecurangan yang terjadi.<br />- Pemilihan pemenang mutlak dan tidak
                                       dapat&nbsp;diganggu&nbsp;gugat
                                     </p>
                                   </div>
-    
+
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-    
-    
+
+
                     </div>
                   </div>
-    
+
                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
                     tabindex="0">
                     <div class="leaderboard">
@@ -201,13 +214,13 @@
                           </tr>
                         </thead>
                         <tbody class="myclass" id="myfish">
-    
+
                         </tbody>
                       </table>
                     </div>
                   </div>
                 </div>
-    
+
               </div>
               <a class="btn btn-warning btn-lg mt-5" href="https://m88play.co" target="_blank" role="button"><b>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
@@ -222,18 +235,18 @@
         </div>
         <!-- right col -->
         <div class="col-md-3 mt-5">
-          <div class="d-flex justify-content-center">
+          <!-- <div class="d-flex justify-content-center">
             <div class="d-flex row">
               <a href="https://m88play.co/" class="" target="_blank" >
                 <img src="./public/src/assets/img/horizontal.png" class="image1 lazy" alt="Icon Game Scratch"
                   loading="lazy" style="width: 200px;">
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
-      
+
 
       <a href="https://api.whatsapp.com/send?phone=6281288522088&text=Permisi%20admin%20saya%20dari%20aku%20mau%20juara"
         class="float" target="_blank">
