@@ -25,15 +25,15 @@
   <script>
     // function GetURLParameter(sParam) {
     const queryString = window.location.search;
+    const url = 'https://bit.ly/tembakIkan'
     const urlParams = new URLSearchParams(queryString);
     const product = urlParams.get('uid');
-    console.log(product);
 
     function goFish() {
       if (product != null) {
         window.location.href = `https://gentle-profiterole-0c4bec.netlify.app/?uid=${product}&game=ikan`;
       } else {
-        window.open(`https://m88play.co`, '_blank').focus();
+        window.open(url, '_blank').focus();
         window.location.href = `https://gentle-profiterole-0c4bec.netlify.app/?game=ikan`;
       }
     }
@@ -41,7 +41,7 @@
       if (product != null) {
         window.location.href = `https://friendly-crisp-89dfaf.netlify.app/?uid=${product}&game=scratch`;
       } else {
-        window.open(`https://m88play.co`, '_blank').focus();
+        window.open(url, '_blank').focus();
         window.location.href = `https://friendly-crisp-89dfaf.netlify.app/?game=scratch`;
       }
     }
@@ -49,7 +49,7 @@
       if (product != null) {
         window.location.href = `https://mobile--sprightly-youtiao-662b0f.netlify.app/?uid=${product}&game=spin`;
       } else {
-        window.open(`https://m88play.co`, '_blank').focus();
+        window.open(url, '_blank').focus();
         window.location.href = `https://mobile--sprightly-youtiao-662b0f.netlify.app/?game=spin`;
       }
     }
